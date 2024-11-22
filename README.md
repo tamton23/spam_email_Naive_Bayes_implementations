@@ -1,7 +1,11 @@
-# spam_email_Naive_Bayes_implementations-ebook-packt-
+spam_email_Naive_Bayes_implementations-ebook-packt-
 # Introduction
+
  - Use Naive Bayes
-   
+   ![Screenshot from 2024-11-15 21-04-45](https://github.com/user-attachments/assets/f3a4df29-b7e9-4f65-bb33-99ce1f9e8020)
+   + Feature - P(Ei|H)
+   + Prior - P(H)
+   + Posterior - P(H|E)
  - python3.12 in venv
  - library: nltk, scikit-learn, numpy
    
