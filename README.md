@@ -1,4 +1,11 @@
-# spam_email_Naive_Bayes_implementations-ebook-by-Packt
+# spam_email_Naive_Bayes_implementations-ebook-packt-
+# Introduction
+ - Use Naive Bayes
+   
+ - python3.12 in venv
+ - library: nltk, scikit-learn, numpy
+   
+    
 # Data  [install data email] 
     http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz.
 # In Linux
