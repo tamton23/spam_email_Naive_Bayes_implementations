@@ -70,4 +70,4 @@ step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> ex
     #
         exec(open("train_naiveBayes_emails.py").read())
     The naive Bayes classifier we just developed line by line correctly classifies ~=
-92% of emails!
+91% of emails!
