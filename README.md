@@ -25,7 +25,7 @@ step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> ex
 2. exec Module loadSpamEmail and loadHamEmail with label have elements is 0(ham email) and 1(spam email).
        -> Here there are two variables e_emails(length = 5172) and labels(length = 5172)
    #
-        exec(open("loadSamEmails_labels.py").read())
+        exec(open("loadSpamEmails_labels.py").read())
         exec(open("loadHamEmails_labels.py").read())
         print(f"length emails: {len(e_mails)} \nlength labels: {len(labels)}")
 4. use Module clean date to clean files email. 
