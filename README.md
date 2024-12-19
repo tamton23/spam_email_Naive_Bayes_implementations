@@ -43,7 +43,7 @@ step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> ex
 8. Starting with the prior, we first group the data by label: use module prior.py
    # P(S)
        exec(open("prior.py").read())
-       prior = get_prior(labels_index)
+       prior = get_prior(label_index)
 9. likelihood: probability of that feature appearing on the label. P(feature(word)|label)
    # P(Xi|S)
        exec(open("prior.py").read())
