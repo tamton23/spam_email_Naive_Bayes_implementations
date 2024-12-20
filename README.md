@@ -1,6 +1,6 @@
 # spam_email_Naive_Bayes_implementations-ebook-by-Packt
 # Data  [install data email] 
-    http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz.
+    http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz
 # In Linux
 
     ls -l enron1/ham/*.txt |wc -l 
