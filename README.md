@@ -17,7 +17,7 @@ step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> ex
         exec(open("loadSamEmails_labels.py").read())
         exec(open("loadHamEmails_labels.py").read())
         print(f"length emails: {len(e_mails)} \nlength labels: {len(labels)}")
-4. use Module clean date to clean files email. 
+3. use Module clean date to clean files email. 
        -> Module includes func clean_text(parameter is e_mails) to reformat characters and formats in each email file.
     #
        exec(open("clean_data.py").read())
@@ -26,6 +26,7 @@ step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> ex
     #
        print(cleaned_emails[0])
    
-5. after we format data, we will extracting feature, and file "extracting_features.py"  will do its job.
+4. after we format data, we will extracting feature, and file "extracting_features.py"  will do its job.
         -> the "max_feature" parameter set 500 and it can be modified for better accuracy.
-6. Starting with the prior, we first group the data by label: use module prior.py
+5. Starting with the prior, we first group the data by label: use module prior.py
+
