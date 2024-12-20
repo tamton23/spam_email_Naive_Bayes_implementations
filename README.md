@@ -28,4 +28,4 @@ step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> ex
    
 5. after we format data, we will extracting feature, and file "extracting_features.py"  will do its job.
         -> the "max_feature" parameter set 500 and it can be modified for better accuracy.
-7. Starting with the prior, we first group the data by label: use module prior.py
+6. Starting with the prior, we first group the data by label: use module prior.py
