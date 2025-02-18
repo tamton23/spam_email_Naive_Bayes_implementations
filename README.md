@@ -31,6 +31,7 @@ Trước khi thực thi trong tập lệnh Loaddata.py cập nhật đường li
 Cách 1:
     • python NaiveBayes_emails.py
 Cách 2: Trong giao diện lập trình python sử dụng lệnh
+
 	>> exec(open(“NaiveBayes_emails.py”).read())
 Kết quả của dòng lệnh:
 
@@ -44,19 +45,23 @@ Kết quả của dòng lệnh:
  B7. Train - test
 2.2.1. Load dữ liệu và gán nhãn:
 Trong môi trường Python chạy lệnh python.
+
 	>>> e_mails = [ ]
 	>>> labels = [ ]
 	>>> import Loaddata as l
 	>>> l.load(e_mails, labels)
 kiểm tra danh sách xem đã có dữ liệu chưa.
+
 	>>> len(e_mails)
 5512
 Hiển thị: 
 
 2.2.2. Định dạng nội dung email: sử dụng func _clean_text(tham số) trong Filteremail.py
+
 	>>> import Filteremail as fl
 	>>> cleaned_emails = fl._clean_text(e_mails)
 So sánh email chưa định dạng và email đã định dạng
+
 	>>> e_mail[0]
 	>>> cleaned_emails[0]
 Hiển thị: 
@@ -64,28 +69,37 @@ Hiển thị:
 
 2.2.3. Features: _get_features. của Filteremail.py
 Nhập tiếp tục: 
+
 	>>> term_docs = fl._get_feature(cleaned_emails)
 Xem có bao nhiêu thuật ngữ xuất hiện trong email.
+
 	>>> print(term_docs[0])
 2.2.4. Prior: _get_label_index(), _get_prior()
 Ta cần group nhãn trước khi tính xác suất tiên nghiệm.
+
 	>>> label_index = fl._get_label_index(labels)
 Tính prior.
+
 	>>> prior = fl._get_prior(label_index)
 Xem kết quả:
 
 2.2.5. Likelihood: _get_likelihood(tham số 1,ts 2,ts 3)
 Đưa vào 3 đối số: feature, label_index và số làm mềm 
+
 	>>> likelihood = fl._get_likelihood(term_docs, label_index, 1)
 Xem xác suất của 5 email thuộc nhãn 1
+
 	>>> likelihood[1][:5]
 
 2.2.6. Posterior(xác suất hậu nghiệm):_get_posterior
 Khi đã có term_docs, prior, likelihood ta sẽ tính posterior.
+
 	>>> posterior = fl._get_posterior(term_docs, prior, likelihood)
 Xem xác suất của 5 email đầu.
+
 	>> posterior[:5]
 2.2.7. Train - Test:
+
 	>>> exec(open(“NaiveBayes_emails.py").read())
 Tính được xác suất sấp xỉ 94% với 70% email train và 30% email test
 
