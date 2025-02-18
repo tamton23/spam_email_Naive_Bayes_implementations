@@ -37,12 +37,19 @@ Kết quả của dòng lệnh:
 
 2.2. Thực thi chi tiết:
  B1. Load dữ liệu và gán nhãn
+ 
  B2. Định dạng lại nội dung email - ( _clean_data())
+ 
  B3. Features - ( _get_features())
+ 
  B4. Tính prior( xác suất tiên nghiệm) - (_get_prior())
+ 
  B5. Likelihood: P(features|labels) - (_get_likelihood())
+ 
  B6. Posterior(xác suất hậu nghiệm) - ( _get_posterior())
+ 
  B7. Train - test
+ 
 2.2.1. Load dữ liệu và gán nhãn:
 Trong môi trường Python chạy lệnh python.
 
