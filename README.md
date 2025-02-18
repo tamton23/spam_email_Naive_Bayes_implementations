@@ -8,12 +8,18 @@
 to check folder constrain file NoSpam and Spam
 # Implement Module
 step: loadSpamEmails_labels.py -> loadHamEmails_labels.py -> clean_data.py -> exreacting_features.py -> prior.py -> likelihood.py -> posterior.py (test on some content emails)
+
 Chương 1: Dữ liệu và source code.
+
 1.1. Dữ liệu.
+
 Dữ liệu để train và test được lấy trong ebook, có 6 cơ sở dữ liệu:
 Link: http://www.aueb.gr/users/ion/data/enron-spam/
+
 Link tải trực tiếp 1 trong các cơ sở dữ liệu( link dự phòng)
+
 Link: http://www.aueb.gr/users/ion/data/enron-spam/preprocessed/enron1.tar.gz
+
 1.2. Source code:
 Yêu cầu:
 + Python (khiến nghị phiên bản mới nhất)
@@ -24,9 +30,13 @@ Code bao gồm:
 	+ Filteremail.py
 + NaiveBayes_emails.py
 + Loaddata.py
+  
 Link source: https://github.com/tamton23/spam_email_Naive_Bayes_implementations
+
 Chương 2: Thực thi tập lệnh
+
 Trước khi thực thi trong tập lệnh Loaddata.py cập nhật đường link dữ liệu.
+
 2.1. Thực thi trực tiếp ra kết quả: 2 cách chạy 
 Cách 1:
     • python NaiveBayes_emails.py
