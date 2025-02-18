@@ -36,6 +36,7 @@ Cách 2: Trong giao diện lập trình python sử dụng lệnh
 Kết quả của dòng lệnh:
 
 2.2. Thực thi chi tiết:
+
  B1. Load dữ liệu và gán nhãn
  
  B2. Định dạng lại nội dung email - ( _clean_data())
